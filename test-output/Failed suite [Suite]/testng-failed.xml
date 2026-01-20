@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utility.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <parameter name="BrowserName" value="Chrome"/>
+    <classes>
+      <class name="Test.LogIn">
+        <methods>
+          <include name="logIn" invocation-numbers="0 2"/>
+          <include name="befourTest"/>
+          <include name="AfterSuite"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="befourSuite"/>
+          <include name="befourClass"/>
+          <include name="AfterTest"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- Test.LogIn -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
